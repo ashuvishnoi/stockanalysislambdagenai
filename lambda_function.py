@@ -2,6 +2,7 @@ import json
 import boto3
 import matplotlib.pyplot as plt
 from io import BytesIO
+import pandas as pd
 
 s3_client = boto3.client('s3')
 bedrock_client = boto3.client('bedrock', region_name='ap-south-1')  # Initialize AWS Bedrock client with your 
